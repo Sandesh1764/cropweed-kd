@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+
+# Data & weights (large)
+data/
+pretrained/
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+*.mp4
+*.bag
+
+# Experiment dumps
+run/
+wandb/
+outputs/
+predictions/
+
+# Local only
+talha_spray/
+*.ipynb

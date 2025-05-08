@@ -1,0 +1,15 @@
+# Knowledge distillation: ResNet-101 teacher → ResNet-18 student
+dataset: cropweed
+backbone: resnet18
+out_stride: 16
+epochs: 150
+batch_size: 4
+lr: 0.01
+lr_scheduler: poly
+loss_type: ce
+base_size: 1024
+crop_size: 1024
+pa_lambda: 1.0
+pi_lambda: 10.0
+workers: 4
+# Place teacher weights at: pretrained/deeplab-resnet101.pth.tar

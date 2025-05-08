@@ -1,0 +1,12 @@
+# Baseline student without distillation
+dataset: cropweed
+backbone: resnet18
+out_stride: 16
+epochs: 30
+batch_size: 4
+lr: 0.01
+lr_scheduler: poly
+loss_type: ce
+base_size: 513
+crop_size: 513
+workers: 4
